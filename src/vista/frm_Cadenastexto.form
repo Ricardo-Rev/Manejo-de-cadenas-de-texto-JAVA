@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="mnb_archivo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Archivo"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_abrir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_abrirActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_guardar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_guardarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_guardar_como">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Guardar como"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_guardar_comoActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="mnb_editar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Editar"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_copiar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Copiar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_copiarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_cortar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cortar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_cortarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_pegar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pegar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_pegarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_buscar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Buscar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_buscarActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="mni_reemplazar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reemplazar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mni_reemplazarActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" pref="636" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lbl_intrucciones1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_ultima_letra" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                              <Component id="lbl_resultado4" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="lbl_primer_letra" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                              <Component id="lbl_resultado3" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lbl_total_palabras" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                              <Component id="lbl_resultado2" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="lbl_longitud_text" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                              <Component id="lbl_resultado1" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="lbl_ultima_palabra" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                                      <Component id="lbl_resultado8" pref="100" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="lbl_palabra_central" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                                      <Component id="lbl_resultado7" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="lbl_primer_palabra" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                                      <Component id="lbl_resultado6" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="lbl_letra_central" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="lbl_resultado5" min="-2" pref="40" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="lbl_resultado_par" min="-2" pref="40" max="-2" attributes="0"/>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="lbl_repeticion_e" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_repeticion_a" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_repeticion_i" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_repeticion_o" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="lbl_repeticion_u" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="1" attributes="0">
+                                                              <Component id="lbl_resultado_a" min="-2" pref="40" max="-2" attributes="0"/>
+                                                              <Component id="lbl_resultado_e" min="-2" pref="40" max="-2" attributes="0"/>
+                                                              <Component id="lbl_resultado_i" min="-2" pref="40" max="-2" attributes="0"/>
+                                                              <Component id="lbl_resultado_o" min="-2" pref="40" max="-2" attributes="0"/>
+                                                              <Component id="lbl_resultado_u" min="-2" pref="40" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Component id="lbl_resultado_impar" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="58" pref="58" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="lbl_par" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="lbl_impar" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                          <Component id="lbl_titulo1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="lbl_titulo2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="281" max="-2" attributes="0"/>
+                          <Component id="bt_procesar" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="lbl_titulo1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lbl_intrucciones1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="154" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="bt_procesar" min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_longitud_text" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_repeticion_a" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado_a" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_total_palabras" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_repeticion_e" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado_e" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_primer_letra" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_repeticion_i" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado_i" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_ultima_letra" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_repeticion_o" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado_o" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbl_resultado5" alignment="0" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbl_repeticion_u" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_resultado_u" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                          <Component id="lbl_letra_central" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lbl_resultado6" alignment="1" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbl_primer_palabra" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_par" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbl_resultado_par" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_palabra_central" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_impar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado_impar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbl_ultima_palabra" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lbl_resultado8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lbl_titulo2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="130" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lbl_titulo1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="MANEJO DE CADENAS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_intrucciones1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ingrese un texto o abra un archivo"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txta_ingreso">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="bt_procesar">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="PROCESAR"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder>
+                  <Color PropertyName="color" blue="0" green="99" red="ff" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_procesarActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_longitud_text">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Longitud del texto..........."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_repeticion_a">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Repeticiones de &quot;A&quot;, &quot;a&quot; &#xf3; &quot;&#xe1;&quot;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_total_palabras">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Total de palabras............."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_repeticion_e">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Repeticiones de &quot;E&quot;, &quot;e&quot; &#xf3; &quot;&#xe9;&quot;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_primer_letra">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Primer letra del texto......"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_repeticion_i">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Repeticiones de &quot;I&quot;, &quot;i&quot; &#xf3; &quot;&#xed;&quot;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_repeticion_o">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Repeticiones de &quot;O&quot;, &quot;o&quot; &#xf3; &quot;&#xf3;&quot;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_ultima_letra">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xda;ltima letra del texto......"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_repeticion_u">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Repeticiones de &quot;U&quot;, &quot;u&quot; &#xf3; &quot;&#xfa;&quot;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_letra_central">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Letra central del texto....."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_par">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palabras con cantidad de caracter par"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_primer_palabra">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Primer palabra................."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_a">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_e">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_i">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_o">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_u">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_par">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado_impar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_impar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palabras con cantidad de caracter impar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_palabra_central">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palabra central................"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_titulo2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="TRADUCCI&#xd3;N A CLAVE MURCIELAGO"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txta_traduccion">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="lbl_ultima_palabra">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xda;ltima palabra................."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lbl_resultado8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="----"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
